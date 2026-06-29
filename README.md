@@ -20,4 +20,4 @@ This project detects hand gestures from webcam input and converts them into **li
 
 ---
 
-## 🏗️ Project Structure
+
