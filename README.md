@@ -10,8 +10,8 @@ This project detects hand gestures from webcam input and converts them into **li
 - ✋ Real-time hand gesture recognition
 - 🎥 Live webcam processing
 - 🧠 TensorFlow deep learning model
-- 🤖 MediaPipe hand tracking (21 landmarks)
-- ⚡ FPS (Frames Per Second) counter
+- 🤖 MediaPipe hand tracking 
+- Accuracy score
 - ⌨️ Gesture-to-text typing system
 - 📊 Live analytics dashboard
 - 📈 Prediction history tracking
