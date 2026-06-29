@@ -1,44 +1,44 @@
 ﻿# ==========================
 # Computer Vision
 # ==========================
-opencv-python==4.10.0.84
-mediapipe==0.10.33
-Pillow==11.0.0
+opencv-python
+mediapipe
+Pillow
 
 # ==========================
 # Numerical Computing
 # ==========================
-numpy==1.26.4
-pandas==2.1.4
+numpy
+pandas
 
 # ==========================
 # Machine Learning
 # ==========================
-scikit-learn==1.5.2
-joblib==1.4.2
+scikit-learn
+joblib
 
 # ==========================
 # Deep Learning
 # ==========================
-tensorflow==2.17.0
+tensorflow
 
 # ==========================
 # Visualization
 # ==========================
-matplotlib==3.9.2
+matplotlib
 
 # ==========================
 # Streamlit App
 # ==========================
-streamlit==1.40.2
+streamlit
 
 # ==========================
 # Utilities
 # ==========================
-pyautogui==0.9.54
-tqdm==4.67.1
+pyautogui
+tqdm
 
 # ==========================
 # Optional
 # ==========================
-protobuf==4.25.3
+protobuf
