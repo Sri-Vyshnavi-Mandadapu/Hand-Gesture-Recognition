@@ -1,81 +1,63 @@
 """
-Project Configuration File
-Author: Sri Vyshnavi Mandadapu
+Project Configuration
 """
 
-# ==========================
-# Dataset
-# ==========================
+import os
 
-DATASET_PATH = "dataset"
-DATA_PATH = "data"
+# ==========================================================
+# Paths
+# ==========================================================
 
-# ==========================
-# Model
-# ==========================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-MODEL_PATH = "models/hand_gesture_model.pkl"
+DATASET_PATH = os.path.join(BASE_DIR, "dataset")
+LEAP_DATASET = os.path.join(DATASET_PATH, "LeapGestRecog")
+CUSTOM_DATASET = os.path.join(DATASET_PATH, "Custom")
 
-# ==========================
-# Labels
-# ==========================
+DATA_PATH = os.path.join(BASE_DIR, "data")
+MODELS_PATH = os.path.join(BASE_DIR, "models")
+LOG_PATH = os.path.join(BASE_DIR, "logs")
+SCREENSHOT_PATH = os.path.join(BASE_DIR, "screenshots")
 
-LABEL_FILE = "data/labels.txt"
+CSV_PATH = os.path.join(DATA_PATH, "data.csv")
+LABEL_FILE = os.path.join(DATA_PATH, "labels.txt")
 
-# ==========================
-# Logs
-# ==========================
+MODEL_PATH = os.path.join(MODELS_PATH, "gesture_model.keras")
+SCALER_PATH = os.path.join(DATA_PATH, "scaler.pkl")
+ENCODER_PATH = os.path.join(DATA_PATH, "label_encoder.pkl")
 
-LOG_FILE = "logs/predictions.csv"
+METRICS_PATH = os.path.join(MODELS_PATH, "metrics.json")
 
-# ==========================
-# Screenshot Folder
-# ==========================
-
-SCREENSHOT_PATH = "screenshots"
-
-# ==========================
+# ==========================================================
 # Camera
-# ==========================
+# ==========================================================
 
 CAMERA_ID = 0
-
 FRAME_WIDTH = 1280
-
 FRAME_HEIGHT = 720
 
-# ==========================
+# ==========================================================
 # MediaPipe
-# ==========================
+# ==========================================================
 
 MAX_HANDS = 2
-
 DETECTION_CONFIDENCE = 0.7
-
 TRACKING_CONFIDENCE = 0.7
 
-# ==========================
-# Prediction
-# ==========================
-
-HISTORY_SIZE = 10
-
-CONFIDENCE_THRESHOLD = 0.70
-
-# ==========================
-# Machine Learning
-# ==========================
-
-RANDOM_STATE = 42
+# ==========================================================
+# Training
+# ==========================================================
 
 TEST_SIZE = 0.2
+RANDOM_STATE = 42
 
-N_ESTIMATORS = 300
+BATCH_SIZE = 64
+EPOCHS = 100
+LEARNING_RATE = 0.001
 
-# ==========================
-# Theme
-# ==========================
+# ==========================================================
+# Prediction
+# ==========================================================
 
-APP_TITLE = "AI Hand Gesture Recognition"
-
-AUTHOR = "Sri Vyshnavi Mandadapu"
+CONFIDENCE_THRESHOLD = 0.45
+HISTORY_SIZE = 10
