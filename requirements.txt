@@ -31,7 +31,7 @@ matplotlib
 # Streamlit App
 # ==========================
 streamlit
-
+streamlit_webrtc
 # ==========================
 # Utilities
 # ==========================
